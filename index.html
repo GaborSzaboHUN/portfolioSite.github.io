@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+
+    <script src="https://kit.fontawesome.com/0f88116e95.js" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <script src="/data/portfolio.js"></script>
+    <script src="/data/web-skills.js"></script>
+    <script src="/data/design-skills.js"></script>
+    <script src="/js/app.js" defer></script>
+
+    <link rel="icon" href="assets/img/GS-icon.svg">
+    <title>SG Portfolio</title>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <header class="header">
+        <nav class="navbar__container">
+            <a href="#" class="logo">
+                <img src="/assets/img/GS-logo.svg" alt="Logo" />
+                <div class="logo-underline"></div>
+            </a>
+            <div class="navigation-container">
+                <ul class="navbar__list">
+                    <li class="navbar__list-item">
+                        <a class="navbar__list-link" href="#">home</a>
+                    </li>
+                    <li class="navbar__list-item">
+                        <a class="navbar__list-link" href="#portfolio">portfolio</a>
+                    </li>
+                    <li class="navbar__list-item">
+                        <a class="navbar__list-link" href="#about">about</a>
+                    </li>
+                    <li class="navbar__list-item">
+                        <a class="navbar__list-link" href="#contact">contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hamburger-menu" id="menu-toggler">
+                <div class="bar-top"></div>
+                <div class="bar-mid"></div>
+                <div class="bar-bottom"></div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!-- Main image -->
+    <section class="main-container">
+        <div class="image-container"></div>
+        <div class="name-container">
+            <h1 class="name">GABOR SZABO</h1>
+        </div>
+        <div class="forward-icon-container">
+            <a href="#portfolio"><i class="fa-solid fa-sort-down"></i></a>
+        </div>
+    </section>
+
+
+
+    <!-- Portfolio -->
+
+    <div class="nav-placeholder" id="portfolio"></div>
+    <div class="title-container">
+        <p class="title-back">Portfolio</p>
+        <h2 class="title-front">Portfolio</h2>
+    </div>
+
+    <section class="portfolio-container">
+        <div class="swiper my-swiper">
+            <div class="swiper-wrapper" id="swiper-wrapper">
+
+                <div class="swiper-slide" id="swiper-slide1">
+                    <div class="swiper-overlay"></div>
+                    <img src="/assets/img/Gagarin-gallery.png" alt="">
+                </div>
+
+                <div class="swiper-slide" id="swiper-slide2">
+                    <div class="swiper-overlay"></div>
+                    <img src="/assets/img/WeatherApp-React.png" alt="">
+                </div>
+
+                <div class="swiper-slide" id="swiper-slide3">
+                    <div class="swiper-overlay"></div>
+                    <img src="/assets/img/WeatherApp-JS.png" alt="">
+                </div>
+
+                <div class="swiper-slide" id="swiper-slide4">
+                    <div class="swiper-overlay"></div>
+                    <img src="/assets/img/Nasa-IoTD.png" alt="">
+                </div>
+
+                <div class="swiper-slide" id="swiper-slide5">
+                    <div class="swiper-overlay"></div>
+                    <img src="/assets/img/Behance-Sitebuild.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <div id="portfolio-details"></div>
+    <div class="portfolio-details-container hidden"></div>
+
+
+
+    <!-- About -->
+
+    <div class="nav-placeholder" id="about"></div>
+
+    <div class="title-container">
+        <h2 class="title-back">About</h2>
+        <h2 class="title-front">About</h2>
+    </div>
+
+    <div class="personal-container">
+
+        <picture class="profile-image">
+            <p class="image-name">Gabor</p>
+            <p class="image-name">Szabo</p>
+        </picture>
+        <div class="introduction-text-container">
+            <p class="introduction-text">Welcome to my portfolio page. I created this page to showcase my progress, if
+                you
+                haven't found a project that piqued your interest, come back in a month.
+            </p>
+            <p class="introduction-text">I am a creative, open personality with a solution-oriented, practical attitude.
+                My
+                goal is to deepen and
+                broaden my knowledge in the field of front-end development and expand my knowledge of new technologies.
+                I am
+                confident that with my previous graphics knowledge and experience, I can create beautiful and
+                easy-to-use
+                UIs.
+            </p>
+
+        </div>
+    </div>
+
+
+    <div id="web-knowledge" class="skills-container"></div>
+
+    <div class="design-container">
+        <div id="design-knowledge" class="skills-container designs"></div>
+
+        <a href="https://www.behance.net/szabogaborHUN" target=”_blank” class="behance-link">
+            <i class="btn-behance fa-brands fa-square-behance"></i>
+            <p class="behance-text">Behance</p>
+        </a>
+    </div>
+
+
+
+    <!-- Contact -->
+
+    <div class="nav-placeholder" id="contact"></div>
+
+    <div class="title-container">
+        <h2 class="title-back">Contact</h2>
+        <h2 class="title-front">Contact</h2>
+    </div>
+
+    <div class="contact-container">
+        <div class="gradient">
+            <form action="https://getform.io/f/34f7fd76-e12b-422d-89e3-c6cfabd51b35" method="POST"
+                class="contact-form-group">
+                <div class="sender-data-container">
+                    <input type="text" name="name" class="sender-data" required placeholder="Name" autocomplete="off">
+                    <input type="email" name="email" class="sender-data" required placeholder="Email address"
+                        autocomplete="off">
+                </div>
+                <textarea name="message" id="message" cols="30" rows="6" required placeholder="Write your message"
+                    autocomplete="off"></textarea>
+                <button type="submit" id="btn-send-message">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p class="btn-send-text">Send message</p>
+                </button>
+            </form>
+
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <a href="#" class="logo">
+                <img src="/assets/img/GS-logo.svg" alt="Logo" />
+                <div class="logo-underline"></div>
+            </a>
+            <div class="footer-right">
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/g%C3%A1bor-szab%C3%B3-477a652a/" target=”_blank”
+                        class="footer-link"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.behance.net/szabogaborHUN" target=”_blank” class="footer-link"><i
+                            class="fa-brands fa-square-behance"></i></a>
+
+
+                </div>
+                <p class="rights">&copy All rights reserved. Created by Gabor Szabo</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
